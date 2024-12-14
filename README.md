@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Samarth Raj Acharya - Minimalist Design</title>
+    <title>Samarth Raj Acharya - Multi-Paged Modern Website</title>
     <style>
         /* General Reset */
         * {
@@ -64,6 +64,7 @@
             transform: translateY(-5px);
         }
 
+        /* Content Sections */
         .main-content {
             text-align: center;
             padding: 60px 20px;
@@ -78,6 +79,7 @@
             margin-bottom: 30px;
             text-transform: uppercase;
             letter-spacing: 2px;
+            animation: fadeInContent 2s ease-out;
         }
 
         .main-content p {
@@ -88,6 +90,7 @@
             max-width: 800px;
             margin-left: auto;
             margin-right: auto;
+            animation: fadeInText 2s ease-out;
         }
 
         .main-content img {
@@ -97,6 +100,7 @@
             object-fit: cover;
             margin-top: 20px;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
+            animation: bounceIn 1s ease-out;
         }
 
         .main-content img:hover {
@@ -113,6 +117,7 @@
             border-radius: 5px;
             cursor: pointer;
             transition: background-color 0.3s ease, transform 0.2s ease;
+            animation: slideUp 2s ease-out;
         }
 
         .main-content button:hover {
@@ -141,6 +146,27 @@
         @keyframes fadeInHeader {
             0% { opacity: 0; transform: translateY(-50px); }
             100% { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes fadeInContent {
+            0% { opacity: 0; transform: translateY(30px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes fadeInText {
+            0% { opacity: 0; transform: translateX(-20px); }
+            100% { opacity: 1; transform: translateX(0); }
+        }
+
+        @keyframes bounceIn {
+            0% { transform: scale(0.5); opacity: 0; }
+            60% { transform: scale(1.2); opacity: 1; }
+            100% { transform: scale(1); }
+        }
+
+        @keyframes slideUp {
+            0% { transform: translateY(50px); opacity: 0; }
+            100% { transform: translateY(0); opacity: 1; }
         }
 
         /* Responsive Design */
@@ -187,6 +213,9 @@
             <a href="#home">Home</a>
             <a href="#about">About</a>
             <a href="#hobbies">Hobbies</a>
+            <a href="#skills">Skills</a>
+            <a href="#achievements">Achievements</a>
+            <a href="#funfacts">Fun Facts</a>
             <a href="#contact">Contact</a>
         </nav>
     </header>
@@ -212,6 +241,36 @@
             <li><strong>Gaming:</strong> Building incredible worlds in Minecraft</li>
             <li><strong>Technology:</strong> Exploring cutting-edge gadgets and software</li>
             <li><strong>Music:</strong> Enjoying futuristic electronic sounds</li>
+        </ul>
+    </div>
+
+    <!-- Skills Section -->
+    <div id="skills" class="main-content">
+        <h2>Skills</h2>
+        <ul style="list-style-type: none; padding: 0;">
+            <li><strong>Minecraft Building:</strong> Expertise in creating complex Minecraft worlds</li>
+            <li><strong>Programming:</strong> Python, JavaScript, HTML/CSS</li>
+            <li><strong>Video Editing:</strong> Proficient in editing and creating gaming videos</li>
+        </ul>
+    </div>
+
+    <!-- Achievements Section -->
+    <div id="achievements" class="main-content">
+        <h2>Achievements</h2>
+        <ul style="list-style-type: none; padding: 0;">
+            <li><strong>Top Minecraft Builder:</strong> Recognized as one of the best Minecraft builders globally</li>
+            <li><strong>YouTube Channel:</strong> Over 10k subscribers and growing!</li>
+            <li><strong>Gaming Competitions:</strong> Multiple awards in Minecraft building competitions</li>
+        </ul>
+    </div>
+
+    <!-- Fun Facts Section -->
+    <div id="funfacts" class="main-content">
+        <h2>Fun Facts</h2>
+        <ul style="list-style-type: none; padding: 0;">
+            <li><strong>Favorite Color:</strong> Red</li>
+            <li><strong>Favorite Food:</strong> Pizza</li>
+            <li><strong>Dream Vacation:</strong> Japan</li>
         </ul>
     </div>
 
