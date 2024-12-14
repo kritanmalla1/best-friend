@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Samarth Raj Acharya - Multi-Paged Modern Website</title>
+    <title>Samarth Raj Acharya - The Ultimate Website</title>
     <style>
         /* General Reset */
         * {
@@ -15,7 +15,7 @@
         body {
             font-family: 'Roboto', sans-serif;
             background: linear-gradient(135deg, #ff416c, #ff4b2b);
-            color: #333;
+            color: #fff;
             overflow-x: hidden;
             transition: background 0.5s ease;
         }
@@ -24,7 +24,7 @@
             text-align: center;
             padding: 80px 20px;
             background-color: transparent;
-            animation: fadeInHeader 2s ease-out;
+            animation: fadeInHeader 1.5s ease-out;
         }
 
         header h1 {
@@ -57,6 +57,7 @@
             letter-spacing: 1.5px;
             margin: 0 15px;
             transition: color 0.3s ease, transform 0.3s ease, text-shadow 0.3s ease;
+            animation: glowingText 1.5s infinite alternate;
         }
 
         nav a:hover {
@@ -65,7 +66,6 @@
             text-shadow: 0px 0px 10px rgba(255, 0, 0, 0.8), 0px 0px 20px rgba(255, 0, 0, 0.6), 0px 0px 30px rgba(255, 0, 0, 0.4);
         }
 
-        /* Content Sections */
         .main-content {
             text-align: center;
             padding: 60px 20px;
@@ -171,6 +171,24 @@
             100% { transform: translateY(0); opacity: 1; }
         }
 
+        @keyframes glowingText {
+            0% { text-shadow: 0 0 5px #ff4b2b, 0 0 10px #ff4b2b, 0 0 15px #ff4b2b, 0 0 20px #ff4b2b; }
+            50% { text-shadow: 0 0 10px #ff4b2b, 0 0 20px #ff4b2b, 0 0 30px #ff4b2b, 0 0 40px #ff4b2b; }
+            100% { text-shadow: 0 0 5px #ff4b2b, 0 0 10px #ff4b2b, 0 0 15px #ff4b2b, 0 0 20px #ff4b2b; }
+        }
+
+        /* Additional Animations */
+        @keyframes pulseEffect {
+            0% { transform: scale(1); opacity: 0.8; }
+            50% { transform: scale(1.05); opacity: 1; }
+            100% { transform: scale(1); opacity: 0.8; }
+        }
+
+        @keyframes rotateEffect {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
         /* Responsive Design */
         @media (max-width: 768px) {
             header h1 {
@@ -204,6 +222,7 @@
                 font-size: 1.1rem;
             }
         }
+
     </style>
 </head>
 <body>
@@ -217,40 +236,42 @@
             <a href="#hobbies">Hobbies</a>
             <a href="#skills">Skills</a>
             <a href="#funfacts">Fun Facts</a>
+            <a href="#dreamvacation">Dream Vacation</a>
             <a href="#contact">Contact</a>
         </nav>
     </header>
 
     <!-- Home Section -->
     <div id="home" class="main-content">
-        <h2>Welcome to Samarth's Digital Space</h2>
-        <p>Discover the futuristic world of Samarth Raj Acharya, a passionate gamer, and tech enthusiast.</p>
-        <img src="https://i.imgur.com/pP3mL3k.jpeg" alt="Samarth's Photo">
-        <button onclick="window.location.href='#contact'">Get in Touch</button>
+        <h2>Welcome to Samarth's Digital World</h2>
+        <p>Explore the fascinating world of Samarth Raj Acharya. Gamer, Creator, Innovator.</p>
+        <img src="https://i.imgur.com/pP3mL3k.jpeg" alt="Samarth's Photo" style="animation: pulseEffect 3s infinite;">
+        <button onclick="window.location.href='#contact'" style="animation: pulseEffect 3s infinite;">Get in Touch</button>
     </div>
 
     <!-- About Section -->
     <div id="about" class="main-content">
         <h2>About Samarth</h2>
-        <p>Samarth Raj Acharya is a visionary in the world of Minecraft, building intricate and futuristic worlds. With a passion for tech and gaming, Samarth continues to create innovative content for his fans.</p>
+        <p>Samarth is a tech enthusiast, a creative Minecraft builder, and a passionate gamer. He loves to explore new challenges and build futuristic worlds in Minecraft. Apart from gaming, Samarth is highly involved in technology and video creation.</p>
     </div>
 
     <!-- Hobbies Section -->
     <div id="hobbies" class="main-content">
         <h2>Samarth's Hobbies</h2>
         <ul style="list-style-type: none; padding: 0;">
-            <li><strong>Gaming:</strong> Building incredible worlds in Minecraft</li>
-            <li><strong>Music:</strong> Enjoying futuristic electronic sounds</li>
+            <li><strong>Gaming:</strong> Building and surviving in Minecraft</li>
+            <li><strong>Tech:</strong> Experimenting with gadgets and new software</li>
+            <li><strong>Music:</strong> Enjoying and creating electronic music</li>
         </ul>
     </div>
 
     <!-- Skills Section -->
     <div id="skills" class="main-content">
-        <h2>Skills</h2>
+        <h2>Samarth's Skills</h2>
         <ul style="list-style-type: none; padding: 0;">
-            <li><strong>Minecraft Building:</strong> Expertise in creating complex Minecraft worlds</li>
-            <li><strong>Programming:</strong> Python, JavaScript, HTML/CSS</li>
-            <li><strong>Video Editing:</strong> Proficient in editing and creating gaming videos</li>
+            <li><strong>Minecraft Building:</strong> Master of creating complex structures</li>
+            <li><strong>Coding:</strong> Proficient in JavaScript, Python, HTML/CSS</li>
+            <li><strong>Video Editing:</strong> Excellent in editing and content creation</li>
         </ul>
     </div>
 
@@ -259,15 +280,21 @@
         <h2>Fun Facts</h2>
         <ul style="list-style-type: none; padding: 0;">
             <li><strong>Favorite Color:</strong> Red</li>
-            <li><strong>Favorite Food:</strong> MOMO</li>
-            <li><strong>Dream Vacation:</strong> POKHARA</li> <!-- Placeholder dream vacation -->
+            <li><strong>Favorite Food:</strong> Pizza</li>
+            <li><strong>Dream Vacation:</strong> Bora Bora (Paradise Island)</li>
         </ul>
+    </div>
+
+    <!-- Dream Vacation Section -->
+    <div id="dreamvacation" class="main-content">
+        <h2>Samarth's Dream Vacation</h2>
+        <p>Samarth dreams of a tropical paradise, Bora Bora, where he can relax and explore beautiful beaches and crystal-clear waters. It's the ultimate vacation destination!</p>
     </div>
 
     <!-- Contact Section -->
     <div id="contact" class="main-content">
         <h2>Contact Samarth</h2>
-        <p>Want to collaborate with Samarth or just say hello? Reach out via his social media:</p>
+        <p>Want to collaborate with Samarth? Reach out to him on his social media:</p>
         <ul style="list-style-type: none; padding: 0;">
             <li><a href="https://www.facebook.com/samarthraj.acharya.7" target="_blank">Facebook</a></li>
             <li><a href="https://www.youtube.com/@samarthsplaying735" target="_blank">YouTube</a></li>
@@ -276,7 +303,7 @@
 
     <!-- Footer Section -->
     <footer>
-        <p>&copy; 2024 Samarth Raj Acharya | All Rights Reserved</p>
+        <p>&copy; 2024 Samarth Raj Acharya. All Rights Reserved.</p>
     </footer>
 
 </body>
