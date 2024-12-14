@@ -303,7 +303,7 @@
 
     <!-- Footer Section -->
     <footer>
-        <p>&copy; 2024 Samarth Raj Acharya. All Rights Reserved.</p>
+        <p>&copy; 2024 kritanmalla1. All Rights Reserved.</p>
     </footer>
 
 </body>
