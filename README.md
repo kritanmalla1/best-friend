@@ -13,11 +13,11 @@
 
         body {
             font-family: 'Roboto', sans-serif;
-            background: linear-gradient(135deg, #1e2a3a, #3f4b67);
             color: #ecf0f1;
             line-height: 1.6;
             overflow-x: hidden;
-            transition: all 0.3s ease;
+            transition: background 0.5s ease;
+            background: linear-gradient(135deg, #1e2a3a, #3f4b67);
         }
 
         header {
@@ -189,6 +189,18 @@
             100% { transform: rotate(0deg); opacity: 1; }
         }
 
+        @keyframes backgroundChange {
+            0% { background: linear-gradient(135deg, #1e2a3a, #3f4b67); }
+            50% { background: linear-gradient(135deg, #8e44ad, #9b59b6); }
+            100% { background: linear-gradient(135deg, #e74c3c, #ff4081); }
+        }
+
+        /* Scrolling background */
+        .scroll-background {
+            animation: backgroundChange 10s ease infinite;
+            transition: background 0.5s ease;
+        }
+
         /* Responsive design */
         @media (max-width: 768px) {
             header h1 {
@@ -213,7 +225,7 @@
         }
     </style>
 </head>
-<body>
+<body class="scroll-background">
     <header>
         <h1>Samarth Raj Acharya</h1>
     </header>
@@ -281,7 +293,19 @@
     </footer>
 
     <script>
-        // Add interactivity if needed, such as animations or interactions
+        window.addEventListener('scroll', function() {
+            const body = document.querySelector('body');
+            const scrollPosition = window.scrollY;
+            
+            // Change background color based on scroll position
+            if (scrollPosition < 100) {
+                body.style.background = 'linear-gradient(135deg, #1e2a3a, #3f4b67)';
+            } else if (scrollPosition < 500) {
+                body.style.background = 'linear-gradient(135deg, #8e44ad, #9b59b6)';
+            } else {
+                body.style.background = 'linear-gradient(135deg, #e74c3c, #ff4081)';
+            }
+        });
     </script>
 </body>
 </html>
