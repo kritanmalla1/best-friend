@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About My Best Friend</title>
+    <title>About Samarth Raj Acharya</title>
     <style>
         * {
             margin: 0;
@@ -259,6 +259,7 @@
         <a href="#home">Home</a>
         <a href="#about">About</a>
         <a href="#hobbies">Hobbies</a>
+        <a href="#achievements">Achievements</a>
         <a href="#contact">Contact</a>
     </nav>
 
@@ -276,17 +277,26 @@
     <div id="hobbies" class="main-content">
         <h2>Hobbies and Interests</h2>
         <ul>
-               <li><strong>Minecraft:</strong> Samarth enjoys building, exploring, and creating in the world of Minecraft, where his creativity truly shines!</li>
             <li><strong>Traveling:</strong> Exploring new places and cultures is a big part of his life.</li>
             <li><strong>Tech Enthusiast:</strong> He's fascinated by the latest trends in technology.</li>
+            <li><strong>Minecraft:</strong> Samarth enjoys building, exploring, and creating in the world of Minecraft, where his creativity truly shines!</li>
+        </ul>
+    </div>
+
+    <div id="achievements" class="main-content">
+        <h2>Achievements</h2>
+        <ul>
+            <li><strong>Minecraft Creator:</strong> Samarth has built several amazing structures in Minecraft, including large cities and intricate redstone machines.</li>
+            <li><strong>Tech Innovator:</strong> He developed an app that helps people track their daily productivity.</li>
         </ul>
     </div>
 
     <div id="contact" class="main-content">
         <h2>Contact Samarth</h2>
-        <p>Want to get in touch with Samarth? Follow him on his social media account:</p>
+        <p>Want to get in touch with Samarth? Follow him on his social media accounts:</p>
         <ul>
             <li><a href="https://www.facebook.com/samarthraj.acharya.7" target="_blank">Facebook</a></li>
+            <li><a href="https://www.youtube.com/@samarthsplaying735" target="_blank">YouTube</a></li>
         </ul>
     </div>
 
