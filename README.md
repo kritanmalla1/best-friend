@@ -33,7 +33,7 @@
             font-weight: 700;
             letter-spacing: 3px;
             text-transform: uppercase;
-            text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.7);
+            text-shadow: 0px 0px 10px rgba(255, 0, 0, 0.8), 0px 0px 20px rgba(255, 0, 0, 0.6), 0px 0px 30px rgba(255, 0, 0, 0.4);
             margin-bottom: 20px;
             animation: fadeIn 1s ease-out;
         }
@@ -56,12 +56,13 @@
             text-transform: uppercase;
             letter-spacing: 1.5px;
             margin: 0 15px;
-            transition: color 0.3s ease, transform 0.3s ease;
+            transition: color 0.3s ease, transform 0.3s ease, text-shadow 0.3s ease;
         }
 
         nav a:hover {
             color: #ff4b2b;
             transform: translateY(-5px);
+            text-shadow: 0px 0px 10px rgba(255, 0, 0, 0.8), 0px 0px 20px rgba(255, 0, 0, 0.6), 0px 0px 30px rgba(255, 0, 0, 0.4);
         }
 
         /* Content Sections */
@@ -80,6 +81,7 @@
             text-transform: uppercase;
             letter-spacing: 2px;
             animation: fadeInContent 2s ease-out;
+            text-shadow: 0px 0px 10px rgba(255, 0, 0, 0.8), 0px 0px 20px rgba(255, 0, 0, 0.6), 0px 0px 30px rgba(255, 0, 0, 0.4);
         }
 
         .main-content p {
@@ -214,7 +216,6 @@
             <a href="#about">About</a>
             <a href="#hobbies">Hobbies</a>
             <a href="#skills">Skills</a>
-            <a href="#achievements">Achievements</a>
             <a href="#funfacts">Fun Facts</a>
             <a href="#contact">Contact</a>
         </nav>
@@ -239,7 +240,6 @@
         <h2>Samarth's Hobbies</h2>
         <ul style="list-style-type: none; padding: 0;">
             <li><strong>Gaming:</strong> Building incredible worlds in Minecraft</li>
-            <li><strong>Technology:</strong> Exploring cutting-edge gadgets and software</li>
             <li><strong>Music:</strong> Enjoying futuristic electronic sounds</li>
         </ul>
     </div>
@@ -254,23 +254,13 @@
         </ul>
     </div>
 
-    <!-- Achievements Section -->
-    <div id="achievements" class="main-content">
-        <h2>Achievements</h2>
-        <ul style="list-style-type: none; padding: 0;">
-            <li><strong>Top Minecraft Builder:</strong> Recognized as one of the best Minecraft builders globally</li>
-            <li><strong>YouTube Channel:</strong> Over 10k subscribers and growing!</li>
-            <li><strong>Gaming Competitions:</strong> Multiple awards in Minecraft building competitions</li>
-        </ul>
-    </div>
-
     <!-- Fun Facts Section -->
     <div id="funfacts" class="main-content">
         <h2>Fun Facts</h2>
         <ul style="list-style-type: none; padding: 0;">
             <li><strong>Favorite Color:</strong> Red</li>
-            <li><strong>Favorite Food:</strong> Pizza</li>
-            <li><strong>Dream Vacation:</strong> Japan</li>
+            <li><strong>Favorite Food:</strong> MOMO</li>
+            <li><strong>Dream Vacation:</strong> POKHARA</li> <!-- Placeholder dream vacation -->
         </ul>
     </div>
 
