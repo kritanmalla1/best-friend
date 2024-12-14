@@ -17,7 +17,10 @@
             line-height: 1.6;
             overflow-x: hidden;
             transition: background 0.5s ease;
-            background: linear-gradient(135deg, #1e2a3a, #3f4b67);
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+            background-color: #2c3e50;
         }
 
         header {
@@ -42,7 +45,7 @@
         nav {
             display: flex;
             justify-content: center;
-            background-color: #2c3e50;
+            background-color: #c0392b;
             padding: 15px 0;
             box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
         }
@@ -129,7 +132,7 @@
         .main-content button {
             padding: 15px 40px;
             font-size: 1.5rem;
-            background-color: #3498db;
+            background-color: #e74c3c;
             color: #fff;
             border: none;
             border-radius: 5px;
@@ -139,7 +142,7 @@
         }
 
         .main-content button:hover {
-            background-color: #2980b9;
+            background-color: #c0392b;
             transform: scale(1.05);
             box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
         }
@@ -189,16 +192,15 @@
             100% { transform: rotate(0deg); opacity: 1; }
         }
 
+        /* Scrolling background effect */
         @keyframes backgroundChange {
-            0% { background: linear-gradient(135deg, #1e2a3a, #3f4b67); }
-            50% { background: linear-gradient(135deg, #8e44ad, #9b59b6); }
-            100% { background: linear-gradient(135deg, #e74c3c, #ff4081); }
+            0% { background-image: url('https://example.com/initial-image.jpg'); }
+            50% { background-image: url('https://example.com/second-image.jpg'); }
+            100% { background-image: url('https://example.com/third-image.jpg'); }
         }
 
-        /* Scrolling background */
         .scroll-background {
-            animation: backgroundChange 10s ease infinite;
-            transition: background 0.5s ease;
+            animation: backgroundChange 15s ease-in-out infinite;
         }
 
         /* Responsive design */
@@ -297,14 +299,9 @@
             const body = document.querySelector('body');
             const scrollPosition = window.scrollY;
             
-            // Change background color based on scroll position
-            if (scrollPosition < 100) {
-                body.style.background = 'linear-gradient(135deg, #1e2a3a, #3f4b67)';
-            } else if (scrollPosition < 500) {
-                body.style.background = 'linear-gradient(135deg, #8e44ad, #9b59b6)';
-            } else {
-                body.style.background = 'linear-gradient(135deg, #e74c3c, #ff4081)';
-            }
+            // Change background image position based on scroll position
+            const bgPos = scrollPosition * 0.2;
+            body.style.backgroundPosition = `center ${bgPos}px`;
         });
     </script>
 </body>
